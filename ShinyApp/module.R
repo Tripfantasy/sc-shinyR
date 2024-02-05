@@ -155,7 +155,7 @@ load_seurat_obj <- function(path){
  
  # Annotation Section
  
- ## Majority Voting: Inspired by CellTypist (not America)
+ ## Majority Voting: Inspired by CellTypist 
  democratic_annotation <- function(object){
    for(cluster in unique(object$seurat_clusters)){
      print(cluster) 
