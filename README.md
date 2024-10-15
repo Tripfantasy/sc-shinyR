@@ -1,6 +1,6 @@
-# sc-shinyR
+# sc-shinyR (WIP)
 
-**Note: Work in progress, features added and polished over time** - DM
+**Note: Project will be re-visited at some point in the future.** - DM 2024
 
 A user-friendly single cell analysis app.
 
@@ -15,25 +15,3 @@ Current state of app is WIP , expect errors and partial functionality as backend
 - Custom thresholds for filtering, principal components, methods
 - Opt-in to visualization inclusion in final report
 
-### Roadmap 
-- Basic app skeleton made [x]
-- Preprocessing tab functionality [~]
-- Annotation tab functionality []
-- DEG tab functionality [] 
-- Default values for configuration [] 
-- KEGG / GO tab inclusion (necessary?) [] 
-- Memory monitoring method [] 
-- Variable input format functions []
-- Raw data input to construct .Rds function []
-- Aesthetic polishing []
-- Interactive graphs in GUI []
-- Graph 'snapshot' function to export to .pdf []
-- Module optimization [] 
-- Vignette example/walkthrough []
-- Hover-over explanations of certain parameters. (E.g., Number of SCT features equates to the number of desired highly differentiated genes to be assessed in the SCT assay) Do we want these or just a good vignette/documentation. []
-- Error messages (NaN/Inf/0 input)
-
-#### Preprocessing (bug control) 
-- redundancy in preprocessing function reloads object when it should already be loaded from load_obj
-- hard-coded x as "nFeature_RNA" instead of dynamic x as pase0("nFeature_",assay) as temperary workaround to a "not found" error.
-- hard coded graph.name argument to "RNA_snn" in FindClusters() as temporary workaround to "Graph.name not found in obj". This should be dynamic and based on output of FindNeighbors, nomenclature varied by default assay. 
